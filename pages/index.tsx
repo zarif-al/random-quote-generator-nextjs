@@ -17,6 +17,9 @@ export default function Home({ quotes }) {
 
   return (
     <div className={styles.container} style={{ background: quoteState.color }}>
+      <Head>
+        <title>Random Quote Generator</title>
+      </Head>
       <TransitionGroup>
         <CSSTransition
           key={quoteState.index}
