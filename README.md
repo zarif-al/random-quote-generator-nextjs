@@ -26,6 +26,6 @@ They are as follows :
 
 - User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
-Update : Shifted to NextJs as it has allows fetching data from a directly from the database.
+Update : Shifted to NextJs as it allows fetching data from a directly from the database.
 
 Deploy link : https://random-quote-generator-nextjs-3heolownr.vercel.app/
