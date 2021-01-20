@@ -1,23 +1,20 @@
+const defaultState = {
+  index: 0,
+  color: randomColor(0),
+};
+
 const reducer = (quoteState, action) => {
   if (action.type === "getQuote") {
-    if (action.payload === 0) {
-      return {
-        ...quoteState,
-        index: 0,
-        color: randomColor(0),
-      };
-    } else {
-      const max = action.payload;
-      let nextIndex = quoteState.index;
-      while (nextIndex === quoteState.index) {
-        nextIndex = Math.floor(Math.random() * Math.floor(max));
-      }
-      return {
-        ...quoteState,
-        index: nextIndex,
-        color: randomColor(0),
-      };
+    const max = action.payload;
+    let nextIndex = quoteState.index;
+    while (nextIndex === quoteState.index) {
+      nextIndex = Math.floor(Math.random() * Math.floor(max));
     }
+    return {
+      ...quoteState,
+      index: nextIndex,
+      color: randomColor(0),
+    };
   }
 };
 
@@ -36,4 +33,4 @@ function randomColor(brightness) {
   );
 }
 
-export default reducer;
+export { reducer, defaultState };
