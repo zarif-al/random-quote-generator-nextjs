@@ -1,18 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { connectToDatabase } from "../utils/mongodb";
-import { useState, useEffect, useReducer } from "react";
+import { useReducer } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import reducer from "../reducer/reducer";
+import { reducer, defaultState } from "../reducer/reducer";
 export default function Home({ quotes }) {
-  const defaultState = {
-    index: 0,
-    color: "blue",
-  };
-
   const [quoteState, dispatch] = useReducer(reducer, defaultState);
 
   return (
