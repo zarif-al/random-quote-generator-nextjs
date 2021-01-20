@@ -1,5 +1,4 @@
 import { MongoClient } from "mongodb";
-import { isCatchClause } from "typescript";
 
 const { MONGODB_URI, MONGODB_DB } = process.env;
 
