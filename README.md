@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+﻿# Random-quote-generator (NextJs)
 
-## Getting Started
+## This is a random quote generator built according to the user stories provided by FCC.
 
-First, run the development server:
+They are as follows :
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- User Story #1: I can see a wrapper element with a corresponding id="quote-box".
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- User Story #3: Within #quote-box, I can see an element with a corresponding id="author".
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- User Story #4: Within #quote-box, I can see a clickable element with a corresponding id="new-quote".
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- User Story #5: Within #quote-box, I can see a clickable a element with a corresponding id="tweet-quote".
 
-## Learn More
+- User Story #6: On first load, my quote machine displays a random quote in the element with id="text".
 
-To learn more about Next.js, take a look at the following resources:
+- User Story #7: On first load, my quote machine displays the random quote's author in the element with id="author".
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- User Story #8: When the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- User Story #9: My quote machine should fetch the new quote's author when the #new-quote button is clicked and display it in the #author element.
 
-## Deploy on Vercel
+- User Story #10: I can tweet the current quote by clicking on the #tweet-quote``a element. This a element should include the "twitter.com/intent/tweet" path in its href attribute to tweet the current quote.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- User Story #11: The #quote-box wrapper element should be horizontally centered. Please run tests with browser's zoom level at 100% and page maximized.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Update : Shifted to NextJs as it has allows fetching data from a directly from the database.
+
+Deploy link : https://random-quote-generator-nextjs-3heolownr.vercel.app/
