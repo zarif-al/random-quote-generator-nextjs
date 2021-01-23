@@ -33,7 +33,7 @@ export default function Home({ quotes }) {
             </div>
             <div className={styles.footer}>
               <div className={styles.footer_top}>
-                <a href="http:// twitter.com/intent/tweet" id="tweet-quote">
+                <a href="http://twitter.com/intent/tweet" id="tweet-quote">
                   <FontAwesomeIcon
                     icon={faTwitter}
                     style={{ color: quoteState.color }}
