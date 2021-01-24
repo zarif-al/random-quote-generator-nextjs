@@ -90,7 +90,7 @@ export default function Home({ quotes }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const { db } = await connectToDatabase();
 
   const data = await db.collection("quotes").find().toArray();
@@ -104,5 +104,6 @@ export async function getServerSideProps(context) {
   });
   return {
     props: { quotes },
+    revalidate: 3000,
   };
 }
