@@ -28,4 +28,4 @@ They are as follows :
 
 Update : Shifted to NextJs as it allows fetching data from a directly from the database.
 
-Deploy link : https://random-quote-generator-nextjs-509q1fqxv.vercel.app/
+Deploy link : https://random-quote-generator-nextjs-qqvvw909i.vercel.app/
